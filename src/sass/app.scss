@@ -1,40 +1,43 @@
 
-$navy: #001e38;
-$green: #15b78f;
-$secondary : rgb(243, 243, 51);
-$show-home-image: true;
-$home-image: url(/dist/img/background.jpg);
-$backgound-opacity: 0.4;
+@import 'config';
+@import 'about';
+@import 'project';
 
+@function set-text-color() {
+  @if(lightness($navy)<40){
+      @return #0003;
+  }
+  @else{
+      @return #fefef4;
+  }
+}
 
 * { box-sizing: border-box;}
 
 #background {
+   
     background: $home-image;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-   
-       
-    &:after {
-      content: '';
+    
+  }
+
+.full-content {
       position: absolute;
       top: 0;
       right: 0;
       width: 100%;
       height: 200vh;
       background: rgba($navy, $backgound-opacity);
-      z-index: -1;
+      z-index: 0;
       @media (max-width: 34em) {
         height: 250vh;
       }
-    }   
-    
-}
-
+}   
 
 h1{
-  color: $green;
+  color:$green;
   font-weight: bold;
   font-size: 3.5rem;
     
@@ -49,7 +52,9 @@ h1{
     width: 100%;
     background: none !important;
     color: $green !important;
-   
+    a{
+      color: lighten($green, 10%);
+    }
 
     @media(max-width: 34em){
       background: black !important;
@@ -68,8 +73,10 @@ h1{
     
     background: $green;
     font-weight: bold;
-    font-size: 1.5rem;
-    min-height: 20vh;
+    font-size: 1.6rem;
+    min-height: auto;
+    border-bottom: 5px solid $secondary;
+    
   }
   .content {
     
@@ -81,9 +88,12 @@ h1{
     justify-content: center;
     align-items: center;
     font-family: monospace;
+    .low-margin {
+      margin-bottom: -1rem;
+    }
 
     h1 {
-      color: $green;
+      color: lighten($green, 10%);
       font-weight: bold;
       font-size: 3.5rem;
         
@@ -94,15 +104,18 @@ h1{
         animation: wave .75s infinite linear alternate;
       }
     }
+    
     .secondary-name {
       color: $secondary;
     }
     .hero-icons {
       margin-top: 1rem;
+      
       a{
         padding: 2rem;
+        color: $secondary;
         &:hover {
-          background-color: $secondary;
+          background-color: lighten($green, 20%);
           transform: translate(20deg);
         }
       }

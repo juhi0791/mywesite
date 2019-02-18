@@ -1,0 +1,9 @@
+
+.project-content {
+    width: 100vw;
+    height: 40vh;
+    background: $project-background;
+    z-index: 3;
+    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 33%, 0% 100%);
+
+}

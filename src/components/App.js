@@ -2,6 +2,7 @@ import React from 'react';
 import '../sass/app.scss';
 import HeroContent from './heroComponent/heroPage';
 import Footer from './footer';
+import Projects from './Projects'
 
 
 export default () => {
@@ -60,7 +61,9 @@ export default () => {
                     </div>
                 </div>
                 </div>
+                <Projects />
                 <Footer />
+                
             </div> 
        </>
     )
