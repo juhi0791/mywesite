@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "format": "prettier --write \"src/**/*.+(js|scss)\"",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
+  "deploy": "gh-pages -d build"
   },
   "homepage": "http://Pratik521992.github.io/portfolio",
   "author": "Pratik",
