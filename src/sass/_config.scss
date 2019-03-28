@@ -1,9 +1,20 @@
 $navy: #001e38;
 $green: #15b78f;
-$secondary : rgb(243, 243, 51);
+$secondary: rgb(243, 243, 51);
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg);
 $backgound-opacity: 0.79;
-$project-background: rgb(194, 35, 194);
+$project-background: lighten($green, 0.4%);
 
+@mixin h1() {
+  color: lighten($navy, 10%);
+  font-weight: bold;
+  font-size: 3.5rem;
 
+  &:after {
+    content: '👇';
+    display: inline-flex;
+    transform: rotate(-20deg);
+    animation: wave 0.75s infinite linear alternate;
+  }
+}

@@ -1,9 +1,46 @@
+.project-wrapper {
+  width: 100vw;
+  height: 40vh;
+  background: $project-background;
+  z-index: 3;
+  -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 33%, 0% 100%);
 
-.project-content {
-    width: 100vw;
-    height: 40vh;
-    background: $project-background;
-    z-index: 3;
-    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 33%, 0% 100%);
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    padding: 10vh 10vw;
 
+    h1 {
+      color: lighten($navy, 10%);
+      font-weight: bold;
+      font-size: 3.5rem;
+
+      &:after {
+        content: '👇';
+        display: inline-flex;
+        transform: rotate(-20deg);
+        animation: wave 0.75s infinite linear alternate;
+      }
+    }
+    
+
+    @media (max-width: 780px) {
+      padding: 5vh 5vw;
+      h1 {
+        color: lighten($navy, 10%);
+        font-weight: bold;
+        font-size: 2rem;
+
+        &:after {
+          content: '👇';
+          display: inline-flex;
+          transform: rotate(-20deg);
+          animation: wave 0.75s infinite linear alternate;
+        }
+      }
+    }
+  }
 }
