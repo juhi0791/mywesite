@@ -7,40 +7,69 @@ export default () => {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2011 - present"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+        <h3 className="vertical-timeline-element-title">Senior Software Developer
+        <span>
+        <i className="fab fa-react fa-2x" aria-hidden="true"  style={{marginLeft: 20}} />
+        </span>
+        </h3>
+        
+        <h4 className="vertical-timeline-element-subtitle">ValueLabs</h4>
+        <p>
+          Client - WebMD
+        </p>
+        <p>
+          Project - Health coaching( 2019 - present)
+        </p>
+        <p>Front-End web developement | ReactJS development | Material UI desigining |Problem Solving | Agile SDLC</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2011 - present"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+        <h3 className="vertical-timeline-element-title">Senior Software Developer
+        <span>
+        <i className="fab fa-react fa-2x" aria-hidden="true"  style={{marginLeft: 20}} />
+        </span>
+        
+        </h3>
+        <h4 className="vertical-timeline-element-subtitle">ValueLabs</h4>
+        <p>
+          Client - WebMD
+        </p>
+        <p>
+          Project - StepBattle( 2018 -2019)
+        </p>
+        <p>Front-End web developement | ReactJS development | Problem Solving | Agile SDLC</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2011 - present"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+        <h3 className="vertical-timeline-element-title">Project Engineer</h3>
+        <h4 className="vertical-timeline-element-subtitle">Wipro Technologies</h4>
+        <p>
+          Client - National Grid UK
+        </p>
+        <p>
+          Project - ServiceNow Automation (2017 - 2018)
+        </p>
+        <p>Automation | Client meetings/calls | Innovation | App developement</p>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}>
+        iconStyle={{ background: 'rgb(233, 30, 99)',textAlign: "center", color: '#fff' }}>
         <h3 className="vertical-timeline-element-title">
-          Bachelor of Science in Interactive Digital Media Visual Imaging
+          Project Engineer
         </h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>Creative Direction, Visual Design</p>
+        <h4 className="vertical-timeline-element-subtitle">Wipro Technologies</h4>
+        <p>
+          Client - National Grid UK
+        </p>
+        <p>
+          Project - Smart Metering portal(2016 - 2017)
+        </p>
+        <p className="vertical-timeline-element-subtitle">SAP Portal</p>
       </VerticalTimelineElement>
-      <VerticalTimelineElement iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }} />
     </VerticalTimeline>
   );
 };

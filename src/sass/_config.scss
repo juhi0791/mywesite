@@ -1,9 +1,9 @@
 $navy: #001e38;
-$green: #15b78f;
+$green: #34bd4a;
 $secondary: rgb(243, 243, 51);
 $show-home-image: true;
-$home-image: url(/dist/img/background.jpg);
-$backgound-opacity: 0.79;
+$home-image: url('../images/background.jpg');
+$backgound-opacity: 0.2;
 $project-background: lighten($green, 0.4%);
 
 @mixin h1() {
@@ -15,6 +15,6 @@ $project-background: lighten($green, 0.4%);
     content: '👇';
     display: inline-flex;
     transform: rotate(-20deg);
-    animation: wave 0.75s infinite linear alternate;
+    animation: wave 0.995s infinite linear alternate;
   }
 }

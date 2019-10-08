@@ -5,7 +5,7 @@ export default () => {
     <>
       <div className="project-wrapper vertical-timeline-element--work">
         <div className="project-content ">
-          <h1 data-aos="fade-right">Projects details </h1>
+          <h1 data-aos="fade-right">Projects </h1>
         </div>
       </div>
     </>

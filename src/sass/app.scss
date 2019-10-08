@@ -8,21 +8,20 @@
   box-sizing: border-box;
 }
 
-#background {
-  background: $home-image;
+.background {
+  background: url("../images/background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .full-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-  background: rgba($navy, $backgound-opacity);
-  z-index: 0;
+  @extend .background;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.full-background {
+  position: relative;
 }
 
 h1 {
