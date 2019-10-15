@@ -31,8 +31,8 @@ const App = props => {
           <div className="container-fluid ">
             <div className="row">
               <nav class="navbar navbar-expand-lg navbar-inverse">
-                <a class="navbar-brand" href="#">
-                  <i aria-hidden="true" /> pratikkumar.com
+                <a class="navbar-brand" href="http://pratikkumar.cf">
+                  <i aria-hidden="true" /> pratikkumar.cf
                 </a>
               </nav>
             </div>
