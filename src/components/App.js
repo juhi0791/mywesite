@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../sass/app.scss';
+import Header from './Header/header';
 import HeroContent from './heroComponent/heroPage';
 import Footer from './footer/footer';
 import Project from './Projects';
@@ -12,32 +13,27 @@ import 'aos/dist/aos.css';
 const App = props => {
 
   const [userName] = useState([
-    {firstName: "Pratik", lastName: "Kumar"},
+    { firstName: "Pratik", lastName: "Kumar" },
   ]);
 
   const [description] = useState({
-    desc: 'A Professionl | A Problem Solver | Coder | Front-End Developer @ ValueLabs'})
+    desc: 'A Professionl | A Problem Solver | Coder | Front-End Developer @ ValueLabs'
+  })
 
   useEffect(() => {
     AOS.init({
       duration: 2000,
     });
-  })
+  }, [])
 
-    return (
-      <>
-        <div className="full-background">
+  return (
+    <>
+      <div className="full-background">
         <div className="full-content">
-          <div className="container-fluid ">
-            <div className="row">
-              <nav class="navbar navbar-expand-lg navbar-inverse">
-                <a class="navbar-brand" href="http://pratikkumar.cf">
-                  <i aria-hidden="true" /> pratikkumar.cf
-                </a>
-              </nav>
-            </div>
+          <Header />
+          <div>
           </div>
-          <HeroContent user={userName} description={description}/>
+          <HeroContent user={userName} description={description} />
           <div className="middle-content pt-5 pb-5 mt-3">
             <div className="container">
               <div className="row">
@@ -46,7 +42,7 @@ const App = props => {
                   <p>ReactJS</p>
                 </div>
                 <div data-aos="flip-left" className="col-sm-12 col-md-3 text-center">
-                <i className="fab fa-sass fa-2x" aria-hidden="true" />
+                  <i className="fab fa-sass fa-2x" aria-hidden="true" />
                   <p>SASS</p>
                 </div>
                 <div
@@ -60,7 +56,7 @@ const App = props => {
                   data-aos="flip-left"
                   data-aos-delay="400"
                   className="col-sm-12 col-md-3 text-center">
-                 <i class="fab fa-js-square fa-2x"></i>
+                  <i class="fab fa-js-square fa-2x"></i>
                   <p>JavaScript</p>
                 </div>
                 <div
@@ -84,10 +80,10 @@ const App = props => {
           <Projects />
           <Resume />
           <Footer />
-          </div>
         </div>
-      </>
-    );
+      </div>
+    </>
+  );
 }
 
 export default App;

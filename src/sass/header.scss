@@ -1,0 +1,34 @@
+
+.header-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    text-align: center;
+    .header-text {
+        font-size: 14px;
+        color: white;
+        padding: 24px;
+        .header {
+            color: whitesmoke;
+            margin: 24px 0;
+            font-size: 4rem;
+            font-weight: bolder;
+            color: white;
+        }
+    }
+    .mac-image {
+        height: 500px;
+        width: 500px;
+        margin-right: 24px;
+    }
+    margin-bottom: -200px;
+}
+.header-content {
+    background-color: $wave;
+    svg {
+      display: block;
+    }
+    p {
+      margin-bottom: 0;
+    }
+
+  }
