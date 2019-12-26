@@ -34,48 +34,6 @@ const App = props => {
           <div>
           </div>
           <HeroContent user={userName} description={description} />
-          <div className="middle-content pt-5 pb-5 mt-3">
-            <div className="container">
-              <div className="row">
-                <div data-aos="flip-left" className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                  <i className="fab fa-react fa-2x" aria-hidden="true" />
-                  <p>ReactJS</p>
-                </div>
-                <div data-aos="flip-left" className="col-sm-12 col-md-3 text-center">
-                  <i className="fab fa-sass fa-2x" aria-hidden="true" />
-                  <p>SASS</p>
-                </div>
-                <div
-                  data-aos="flip-left"
-                  data-aos-delay="400"
-                  className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                  <i class="fab fa-css3-alt fa-2x"></i>
-                  <p>CSS3</p>
-                </div>
-                <div
-                  data-aos="flip-left"
-                  data-aos-delay="400"
-                  className="col-sm-12 col-md-3 text-center">
-                  <i class="fab fa-js-square fa-2x"></i>
-                  <p>JavaScript</p>
-                </div>
-                <div
-                  data-aos="flip-left"
-                  data-aos-delay="800"
-                  className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                  <i class="fab fa-node fa-2x"></i>
-                  <p>NodeJS</p>
-                </div>
-                <div
-                  data-aos="flip-left"
-                  data-aos-delay="800"
-                  className="col-sm-12 col-md-3 text-center">
-                  <i class="fab fa-html5 fa-2x"></i>
-                  <p>HTML 5</p>
-                </div>
-              </div>
-            </div>
-          </div>
           <Project data-aos="fade-up" />
           <Projects />
           <Resume />

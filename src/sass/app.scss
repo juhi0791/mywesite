@@ -4,6 +4,7 @@
 @import 'modal';
 @import 'resume';
 @import 'header';
+@import 'progress';
 
 * {
   box-sizing: border-box;
@@ -58,7 +59,7 @@ nav {
   }
 }
 .middle-content {
-  background: $green;
+  background: $wave;
   font-weight: bold;
   font-size: 1.6rem;
   min-height: auto;
@@ -74,7 +75,7 @@ nav {
   align-items: center;
   font-family: monospace;
   .low-margin {
-    margin-bottom: -1rem;
+    margin-bottom: 3rem;
   }
 
   h1 {

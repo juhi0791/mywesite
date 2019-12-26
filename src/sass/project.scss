@@ -1,9 +1,8 @@
 .project-wrapper {
   width: 100vw;
-  height: 40vh;
-  background: $project-background;
+  height: 50vh;
+  background: $wave;
   z-index: 3;
-  -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 33%, 0% 100%);
 
   .project-content {
     display: flex;
@@ -11,7 +10,7 @@
     justify-content: center;
     align-items: center;
     font-family: monospace;
-    padding: 10vh 10vw;
+    padding: 0 10vw;
 
     h1 {
       color: lighten($navy, 10%);
