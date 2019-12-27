@@ -1,7 +1,7 @@
 .resume-wrapper {
     width: 100vw;
     height: 40vh;
-    background: $project-background;
+    background: $wave;
     z-index: 3;
     -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
   
@@ -30,13 +30,6 @@
         color: lighten($navy, 10%);
         font-weight: bold;
         font-size: 3.5rem;
-  
-        &:after {
-          content: '👇';
-          display: inline-flex;
-          transform: rotate(-20deg);
-          animation: wave 0.75s infinite linear alternate;
-        }
       }
       
   
@@ -46,13 +39,6 @@
           color: lighten($navy, 10%);
           font-weight: bold;
           font-size: 2rem;
-  
-          &:after {
-            content: '👇';
-            display: inline-flex;
-            transform: rotate(-20deg);
-            animation: wave 0.75s infinite linear alternate;
-          }
         }
       }
     }

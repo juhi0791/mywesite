@@ -13,32 +13,16 @@
     padding: 0 10vw;
 
     h1 {
-      color: lighten($navy, 10%);
+      color: lighten($primary, 10%);
       font-weight: bold;
       font-size: 3.5rem;
-
-      &:after {
-        content: '👇';
-        display: inline-flex;
-        transform: rotate(-20deg);
-        animation: wave 0.75s infinite linear alternate;
-      }
     }
-    
 
-    @media (max-width: 780px) {
-      padding: 5vh 5vw;
+    @media (max-width: 992px) {
       h1 {
-        color: lighten($navy, 10%);
+        color: lighten($primary, 10%);
         font-weight: bold;
         font-size: 2rem;
-
-        &:after {
-          content: '👇';
-          display: inline-flex;
-          transform: rotate(-20deg);
-          animation: wave 0.75s infinite linear alternate;
-        }
       }
     }
   }

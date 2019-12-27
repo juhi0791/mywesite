@@ -5,18 +5,11 @@ $secondary: rgb(243, 243, 51);
 $wave: #0099ff;
 $show-home-image: true;
 $home-image: url('../images/background.jpg');
-$backgound-opacity: 0.2;
+$background-opacity: 0.2;
 $project-background: lighten($green, 0.4%);
 
 @mixin h1() {
   color: lighten($navy, 10%);
   font-weight: bold;
   font-size: 3.5rem;
-
-  &:after {
-    content: '👇';
-    display: inline-flex;
-    transform: rotate(-20deg);
-    animation: wave 0.995s infinite linear alternate;
-  }
 }

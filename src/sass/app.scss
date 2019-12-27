@@ -30,13 +30,6 @@ h1 {
   color: $green;
   font-weight: bold;
   font-size: 3.5rem;
-
-  &:after {
-    content: '👋';
-    display: inline-block;
-    transform: rotate(-20deg);
-    animation: wave 0.75s infinite linear alternate;
-  }
 }
 nav {
   width: 100%;
@@ -82,13 +75,6 @@ nav {
     color: lighten($green, 10%);
     font-weight: bold;
     font-size: 3.5rem;
-
-    &:after {
-      content: '👋';
-      display: inline-flex;
-      transform: rotate(-20deg);
-      animation: wave 0.75s infinite linear alternate;
-    }
   }
 
   .secondary-name {
@@ -114,7 +100,6 @@ h2 {
     font-size: 2rem;
     margin-bottom: 7rem;
     padding: 0.2rem 1rem;
-    background: lighten($navy, 2);
   }
 }
 
