@@ -9,7 +9,7 @@ export default () => {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.7" d="M0,256L48,245.3C96,235,192,213,288,213.3C384,213,480,235,576,218.7C672,203,768,149,864,138.7C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>  
       <div id="my-resume" className="resume-wrapper ">
         <div className="resume-image">
-          <img src={ResumeIMG} alt="CV" height="800"/>
+          <img src={ResumeIMG} alt="CV" height="1000"/>
         </div>
         <div className="resume-content ">
           <h2>My Resume </h2>
