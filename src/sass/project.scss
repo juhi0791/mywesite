@@ -1,8 +1,9 @@
 .project-wrapper {
   width: 100vw;
-  height: 50vh;
+  height: 80vh;
   background: $wave;
   z-index: 3;
+
 
   .project-content {
     display: flex;
@@ -26,4 +27,13 @@
       }
     }
   }
+}
+
+
+.project-header {
+  font-family: monospace;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  color: lighten($navy, 10%);
 }

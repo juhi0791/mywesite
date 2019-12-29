@@ -4,6 +4,8 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export default () => {
   return (
+    <>
+    <h2 className="project-header">My Projects</h2>
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -71,5 +73,6 @@ export default () => {
         <p className="vertical-timeline-element-subtitle">SAP Portal</p>
       </VerticalTimelineElement>
     </VerticalTimeline>
+    </>
   );
 };

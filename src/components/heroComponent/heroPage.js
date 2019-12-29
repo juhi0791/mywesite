@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../../images/Pratik.png';
+import Profile from '../../images/profile.jpg';
 
 
 export default ({user, description}) => {
@@ -11,9 +11,7 @@ export default ({user, description}) => {
         </h1>
         <h2 className="sm-heading low-margin">About Me ...</h2>
         <div className="about-content">
-          <div>
             <img src={Profile} alt="" className="bio-image" />
-          </div>
           <div className="bio">
             <h2>Bio</h2>
             <p>

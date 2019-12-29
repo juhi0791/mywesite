@@ -111,18 +111,6 @@ h2 {
   font-size: 3.5rem;
   letter-spacing: 2px;
 
-  .footer-button {
-    width: 40%;
-    font-size: 18px;
-    cursor: pointer;
-    background: $green;
-    color: $navy;
-
-    &:focus {
-      background: $green;
-      color: $navy;
-    }
-  }
   .form-control {
     border: 3px solid $green;
     background: #1111;
