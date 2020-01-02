@@ -61,7 +61,7 @@ nav {
 .content {
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,6 +110,9 @@ h2 {
   font-weight: bold;
   font-size: 3.5rem;
   letter-spacing: 2px;
+  @media screen and (max-width: 992px) {
+    height: 40%;
+  }
 
   .form-control {
     border: 3px solid $green;

@@ -17,6 +17,10 @@ export default ({user, description}) => {
             <p>
               {description.desc}
             </p>
+            <p>
+            I am a Web Developer with extensive experience of around 5 years. My expertise is to create<br/>
+            websites and its components with Javascript.
+            </p>
           </div>
         </div>
         <div className="hero-icons">

@@ -46,7 +46,8 @@ export default () => {
               data-aos="flip-left"
               className="col-sm-12 col-md-2 text-center ml-3 mb-3 mb-md-0">
               <i className="fab fa-react fa-2x" aria-hidden="true" />
-              <p>ReactJS</p>
+              <span><p>React JS</p>
+              </span>              
             </div>
             <div className="progress">
               <div className="progress-bar" style={skills[0]}></div>

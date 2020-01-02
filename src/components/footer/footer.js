@@ -1,19 +1,51 @@
 import React from 'react';
+const { useState } = React;
 
 export default () => {
+
+  const [loading, setLoading] = useState(false);
+  const [comment, setComment] = useState('');
+
+  const handleChange = (event) => {
+    setComment(event.target.value);
+  }
+
+  const handleSubmit = (event) => {
+    setLoading(true);
+    event.preventDefault();
+    fetch('https://hidden-taiga-59961.herokuapp.com/getComments', {
+      method: 'POST',
+      mode: 'cors',
+      body: JSON.stringify({
+        comment: comment,
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+      .then(response => {
+        console.log(response);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.log(err);
+        setLoading(false);
+      })
+  }
+
   return (
     <div className="footer-content">
       <div className="container text-center pt-lg-5">
         <h2>Give me your feedback!</h2>
         <h4>Thank you for your precious time...</h4>
       </div>
-      <form className="form-group row pt-lg-5 pb-lg-5 pt-5">
+      <form onSubmit={handleSubmit} className="form-group row pt-lg-5 pb-lg-5 pt-5">
         <div className="col-sm-12 col-md-5  offset-md-2">
-          <input placeholder="enter your review " type="text" className="form-control mb-4" />
+          <input placeholder="enter your review " onChange={handleChange} type="text" className="form-control mb-4" />
         </div>
         <div className="col-sm-12 col-md-3">
-          <button type="submit" className="btn btn-block btn-dark" style={{width: '30%'}}>
-            Submit
+          <button type="submit" className="btn btn-block btn-dark" style={{ width: '30%' }}>
+            {loading ? 'Wait..' : 'Submit'}
           </button>
         </div>
       </form>
