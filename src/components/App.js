@@ -13,11 +13,11 @@ import 'aos/dist/aos.css';
 const App = props => {
 
   const [userName] = useState([
-    { firstName: "Pratik", lastName: "Kumar" },
+    { firstName: "Juhi", lastName: "Shukla" },
   ]);
 
   const [description] = useState({
-    desc: 'A Professionl | A Problem Solver | Coder | Front-End Developer @ ValueLabs'
+    desc: 'A Professional | A Problem Solver | Consultant | Developer @ Infosys'
   })
 
   useEffect(() => {

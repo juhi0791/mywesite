@@ -5,14 +5,14 @@ export const Header = () => {
     return (
         <header id="#header" className="header-content">
           <nav class="navbar navbar-expand-lg navbar-inverse">
-            <a class="navbar-brand" href="http://pratikkumar.cf">
-              <i aria-hidden="true" /> Pratik Kumar
+            <a class="navbar-brand" href="http://Pratikkumar.cf">
+              <i aria-hidden="true" /> Juhi Shukla
                 </a>
           </nav>
           <div className="header-container">
           
           <div className="header-text">
-          <h2 className="header">Welcome to my website</h2>
+          <h2 className="header">Welcome!</h2>
             <a className="btn btn-dark" href="#my-resume">Hire me !</a>
           </div>
           

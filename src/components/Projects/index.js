@@ -45,8 +45,7 @@ export default () => {
             <div
               data-aos="flip-left"
               className="col-sm-12 col-md-2 text-center ml-3 mb-3 mb-md-0">
-              <i className="fab fa-react fa-2x" aria-hidden="true" />
-              <span><p>React JS</p>
+              <span><p>Dell Boomi</p>
               </span>              
             </div>
             <div className="progress">
@@ -58,8 +57,7 @@ export default () => {
               data-aos="flip-left"
               data-aos-delay="400"
               className="col-sm-12 col-md-2 text-center ml-3 mb-3 mb-md-0">
-              <i class="fab fa-js-square fa-2x"></i>
-              <p>JavaScript</p>
+              <p>SAP PI/PO</p>
             </div>
             <div className="progress blue">
               <div className="progress-bar" style={skills[1]}></div>
@@ -70,7 +68,6 @@ export default () => {
               data-aos="flip-left"
               data-aos-delay="800"
               className="col-sm-12 col-md-2 text-center ml-3 mb-3 mb-md-0">
-              <i class="fab fa-html5 fa-2x"></i>
               <p>HTML 5</p>
             </div>
             <div className="progress yellow">
@@ -82,7 +79,6 @@ export default () => {
               data-aos="flip-left"
               data-aos-delay="400"
               className="col-sm-12 col-md-2 text-center ml-3 mb-3 mb-md-0">
-              <i class="fab fa-css3-alt fa-2x"></i>
               <p>CSS3</p>
             </div>
             <div className="progress">
@@ -91,8 +87,7 @@ export default () => {
           </div>
           <div>
             <div data-aos="flip-left" className="col-sm-12 col-md-2 text-center ml-3 mb-3 mb-md-0">
-              <i className="fab fa-sass fa-2x" aria-hidden="true" />
-              <p>SASS</p>
+              <p>JAVASCRIPT</p>
             </div>
             <div className="progress red">
               <div className="progress-bar" style={skills[4]}></div>
@@ -103,8 +98,7 @@ export default () => {
               data-aos="flip-left"
               data-aos-delay="800"
               className="col-sm-12 col-md-2 text-center ml-3 mb-3 mb-md-0">
-              <i class="fab fa-node fa-2x"></i>
-              <p>NodeJS</p>
+              <p>JAVA</p>
             </div>
             <div className="progress red">
               <div className="progress-bar" style={skills[5]}></div>

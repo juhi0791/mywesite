@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume from '../../images/pratik_kumar.pdf';
+import Resume from '../../images/Juhi_CV.pdf';
 import ResumeIMG from '../../images/CV.jpg';
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
       <div id="my-resume" className="resume-wrapper ">        
         <div className="resume-content ">
           <h2>My Resume </h2>
-          <a href={Resume} className="btn btn-dark" download="pratik_kumar.pdf">Download</a>
+          <a href={Resume} className="btn btn-dark" download="Juhi_CV.pdf">Download</a>
         </div>
         <div className="resume-image">
           <img src={ResumeIMG} alt="CV" height="1000"/>

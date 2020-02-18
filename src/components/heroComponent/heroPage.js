@@ -18,8 +18,8 @@ export default ({user, description}) => {
               {description.desc}
             </p>
             <p>
-            I am a Web Developer with extensive experience of around 5 years. My expertise is to create<br/>
-            websites and its components with Javascript.
+            DellBoomi and SAP PI Developer and consultant with extensive experience of around 5 years. My expertise includes<br/>
+            developing interfaces,end to end scenarios in DellBoomi.
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default ({user, description}) => {
           <a href="/">
             <i className="fab fa-twitter fa-2x" />
           </a>
-          <a href="https://www.linkedin.com/in/pratik-kumar-b2314898/">
+          <a href="https://www.linkedin.com/in/juhi-shukla-a947aa16a/">
             <i className="fab fa-linkedin fa-2x" />
           </a>
           <a href="https://github.com/Pratik521992">
